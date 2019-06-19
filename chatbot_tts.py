@@ -12,7 +12,7 @@ def chat_en():
 
     while 1:
         say = input('Please say something >>')
-        rep = str(cb.get_response(say)
+        rep = str(cb.get_response(say))
         tts = gTTS(text = rep, lang = 'en')
         time_now = time.asctime(time.localtime(time.time()))
         filename = 'Response on ' + time_now + '.mp3'
@@ -26,7 +26,7 @@ def chat_hant():
 
     while 1:
         say = input('Please say something >>')
-        rep = str(cb.get_response(say)
+        rep = str(cb.get_response(say))
         tts = gTTS(text = rep, lang = 'zh')
         time_now = time.asctime(time.localtime(time.time()))
         filename = 'Response on ' + time_now + '.mp3'
