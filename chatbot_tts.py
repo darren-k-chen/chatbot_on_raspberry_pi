@@ -25,7 +25,7 @@ def chat_hant():
     trainer.train("chatterbot.corpus.traditionalchinese")
 
     while 1:
-        say = input(Please say something >>)
+        say = input('Please say something >>')
         rep = str(cb.get_response(say)
         tts = gTTS(text = rep, lang = 'zh')
         time_now = time.asctime(time.localtime(time.time()))
