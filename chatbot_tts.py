@@ -1,4 +1,4 @@
-from chatterbot import ChatBot
+from chatterbot-corpus import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
 
 import time
