@@ -46,10 +46,12 @@ def main():
     tmp = input('Please Enter Your Language >>')
 
     try:
-        chat_en() if tmp in lan_en
-        chat_hant() if tmp in lan_hant
-
-        print("=====END=====") else
+        if tmp in lan_en:
+            chat_en()
+        if tmp in lan_hant:
+            chat_hant()
+        else:
+            print("=====END=====")
     except:
         main()
 
