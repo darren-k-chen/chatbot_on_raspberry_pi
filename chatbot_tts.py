@@ -11,7 +11,7 @@ def chat_en():
     trainer.train("chatterbot.corpus.english")
 
     while 1:
-        say = input(Please say something >>)
+        say = input('Please say something >>')
         rep = str(cb.get_response(say)
         tts = gTTS(text = rep, lang = 'en')
         time_now = time.asctime(time.localtime(time.time()))
